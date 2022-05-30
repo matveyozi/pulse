@@ -1,26 +1,79 @@
+@media (max-width: 1200px) {}
+
 @media (max-width: 991px) {
     .promo {
         padding: 10px;
     }
+    .carousel {
+        padding: 15px;
+        &__inner {
+            .slick-list {
+                img {
+                    width: 100%;
+                }
+            }
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+                li {
+                    list-style: none;
+                    margin-right: 40px;
+                    button {
+                        background-color: #fff;
+                        border-radius: 100%;
+                        width: 40px;
+                        font-size: 0;
+                        height: 15px;
+                    }
+                }
+                .slick-active {
+                    button {
+                        background: linear-gradient(0deg, rgba(20,0,36,1) 0%, rgba(121,9,98,1) 35%, rgba(255,0,0,1) 100%);
+                        box-shadow: 1px 8px 5px gray;
+                        
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 757px) {
     .header {
         padding: 0 10px 0 10px;
     }
+    .carousel {
+        
+        &__inner {
+            width: 100%;
+            .slick-slide {
+                width: 70%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    
 
     .promo {
         &__wrapper {
             align-items: center;
         }
     }
+
     .consultation {
         .title {
             text-align: center;
         }
+
         &__descr {
             text-align: center;
         }
+
         .feed-form {
             margin: 0 auto;
             margin-top: 5px;
@@ -81,25 +134,30 @@
     .button_main {
         width: 260px;
     }
+
     .consultation {
         .title {
             font-size: 25px;
         }
+
         &__descr {
             font-size: 17px;
         }
+
         .feed-form {
             width: 270px;
+
             input {
                 height: 40px;
             }
+
             .button {
                 &_submit {
                     width: 80%;
                     margin: 0 auto;
                 }
             }
-            
+
         }
     }
 }
