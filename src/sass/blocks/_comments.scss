@@ -1,0 +1,40 @@
+.comments {
+    padding-bottom: 48px;
+
+    &__items {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    &__img {
+        display: block;
+        margin-right: 61px;
+        width: 169px;
+        height: 169px;
+    }
+
+    &__item {
+        max-width: 680px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+
+    &__marafon {
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__descr {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+}

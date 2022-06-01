@@ -36,6 +36,16 @@
             }
         }
     }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .comments {
+        &__items {
+            padding: 10px;
+        }
+    }
 
 }
 
@@ -92,6 +102,25 @@
 
         &__subtitle {
             margin-top: 6px;
+        }
+    }
+
+    .catalog {
+        &__tab {
+            width: 30%;
+            
+            font-size: 3vw;
+        }
+    }
+
+    .comments {
+        &__items {
+            
+        }
+        &__img {
+            height: 50px;
+            margin-left: 5%;
+            margin-right: 20px;
         }
     }
 }
@@ -158,6 +187,36 @@
                 }
             }
 
+        }
+    }
+    .catalog {
+
+        &__tab {
+            height: 34px;
+            line-height: 32px;
+        }
+    }
+    .comments {
+        &__items {
+            display: block;
+        }
+        &__item {
+            
+        }
+        &__img {
+            display: inline-block;
+            width: 50px;
+            float: left;
+        }
+        &__name {
+            
+        }
+        &__descr {
+            width: 80%;
+            margin-left: 15px;
+            padding-left: 3px;
+            border: 1px dashed grey;
+            border-radius: 10px;
         }
     }
 }
